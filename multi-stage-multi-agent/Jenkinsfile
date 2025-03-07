@@ -8,7 +8,7 @@ pipeline {
       steps {
         sh 'mvn --version'
         sh 'mvn clean install'
-        sh echo "mvn installation is done"
+        echo 'mvn installation is done praveen'
       }
     }
     stage('Front-end') {
@@ -17,7 +17,7 @@ pipeline {
       }
       steps {
         sh 'node --version'
-        sh echo "Inside node"
+        echo 'Inside node praveen'
       }
     }
   }
